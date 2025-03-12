@@ -974,7 +974,7 @@ async function text2speech(fileName, sonosIp, callback) {
                 if (obj && obj.native && discovery) {
                     fileName = `http${obj.native.secure ? 's' : ''}://${discovery.localEndpoint}:${
                         obj.native.port
-                    }/files/${adapter.name}${id}`;
+                    }/${adapter.name}${id}`;
                     if (sonosIp) {
                         sonosIp = sonosIp.replace(/[.\s]+/g, '_');
                     }
